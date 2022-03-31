@@ -64,7 +64,7 @@ def open_and_read_linexline():
 4. Example code for opening and writing files in python
 '''
 def open_and_write():
-	mynum = '142687621'
+	mynum = '142687621\n'
 
 	f = open('data/new_file.txt', 'w') #opens the file in "write" mode
 	f.write(mynum)
@@ -76,8 +76,8 @@ def open_and_write():
 '''
 6. Example code for opening and appending to files in python
 '''
-def open_and_write():
-	mynum = '821321772'
+def open_and_append():
+	mynum = '821321772\nx'
 
 	f = open('data/new_file.txt', 'a') #opens the file in "write" mode
 	f.write(mynum)
@@ -93,6 +93,10 @@ def open_and_write():
 #open_and_readlines()
 
 #example 3
+
+
 #open_and_read_linexline()
 
-#open_and_write()
+open_and_write()
+
+open_and_append()

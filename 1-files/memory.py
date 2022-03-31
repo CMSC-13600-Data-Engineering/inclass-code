@@ -52,7 +52,7 @@ def open_and_read_linexline():
 
 
 #example 1
-open_and_read()
+#open_and_read()
 
 #example 3
 open_and_read_linexline()
