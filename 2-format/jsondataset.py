@@ -28,8 +28,7 @@ print()
 
 
 
-
-'''
+"""
 count = {}
 
 for tweet in data:
@@ -37,11 +36,12 @@ for tweet in data:
 	count[sentiment] = count.get(sentiment, 0) + 1
 
 print(count)
-'''
+"""
 
 
 
-''''
+
+
 count = {}
 
 for tweet in data:
@@ -54,5 +54,5 @@ for tweet in data:
 for i in range(0,24):
 	positive_perc = count[(i,'positive')]/(count[(i,'positive')] + count[(i,'neutral')] + count[(i,'negative')])
 	print('Hour: ', i, 'Sentiment',positive_perc)
-'''
+
 

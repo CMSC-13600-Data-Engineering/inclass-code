@@ -24,6 +24,7 @@ def example2():
 
 	fp = open('mydata.json','w')
 
+
 	#write to file
 	print('Writing the JSON string to a file...')
 	json.dump(d, fp)
@@ -60,4 +61,4 @@ def example4():
 	json.dump(d, fp)
 	fp.close()
 
-example4()
+example1()
