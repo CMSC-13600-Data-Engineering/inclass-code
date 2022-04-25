@@ -1,0 +1,17 @@
+openssl aes-256-cbc -in test.txt -out test.enc
+
+openssl aes-256-cbc -d -in test.enc -out test.txt
+
+
+
+openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
+
+openssl rsa -pubout -in private_key.pem -out public_key.pem
+
+
+
+echo 'hello world' > PlainTextFile.txt
+
+openssl rsautl -encrypt -inkey public_key.pem -pubin -in PlainTextFile.txt -out EncryptedData.encrypted
+
+openssl rsautl -decrypt -inkey private_key.pem -in EncryptedData.encrypted -out DecryptedData.txt   
